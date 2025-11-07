@@ -4,7 +4,7 @@
 
 # 🕒 Digital Clock on FPGA (Datapath + Control Path)
 
-![Architecture](assets/architecture.png)
+
 
 ## 📘 Overview
 This project implements a **Digital Clock on FPGA** using a **modular Datapath and Control Path** design approach.  
@@ -25,32 +25,7 @@ It has been **simulated, synthesized, and tested on FPGA hardware**.
 
 ---
 
-## 🧩 Project Structure
-\`\`\`
-├── rtl/
-│   ├── top.v               # Top-level module
-│   ├── datapath.v          # Datapath: registers, counters, display logic
-│   └── control.v           # Control path: FSM, enable & control signals
-├── tb/
-│   └── tb_top.v            # Testbench for simulation
-├── constraints/
-│   └── board_example.xdc   # FPGA pin constraints
-├── scripts/
-│   ├── vivado_run.tcl      # Synthesis & bitstream generation script
-│   └── run_sim.sh          # Optional simulation script
-├── assets/
-│   ├── architecture.png
-│   ├── schematic.png
-│   ├── simulation_waveform.png
-│   └── fpga_photo.jpg
-├── results/
-│   ├── simulation.vcd
-│   ├── waveform.wcfg
-│   └── timing_summary.rpt
-└── README.md
-\`\`\`
 
----
 
 ## 🧠 Architecture & Schematic
 
@@ -68,7 +43,7 @@ The **Control Path** is an FSM that:
 **Block Diagram:**  
 ![Architecture](assets/architecture.png)
 
-**Schematic / Board Connections:**  
+**Schematic:**  
 ![Schematic](assets/schematic.png)
 
 ---
@@ -88,27 +63,23 @@ The **Control Path** is an FSM that:
 ## 💡 FPGA Implementation
 
 - Toolchain: *Xilinx Vivado*  
-- Device: *Basys3 (XC7A35T)* or equivalent  
-- Display: *Four 7-segment LEDs*  
+- Device: Artrix-7 
+- Display: *six 7-segment LEDs*  
 - Clock Source: *100 MHz onboard oscillator (divided internally)*
 
 **Real Hardware Output:**  
 ![FPGA Result](assets/fpga_photo.jpg)
 
 The bitstream was successfully generated and downloaded to FPGA.  
-The 7-segment display updates each second and supports *mode switching* via buttons.
+The 7-segment display updates each second and supports *resetting* via buttons.
 
 ---
 
 ## 🛠️ How to Run
 
 ### Simulation
-\`\`\`bash
-# Using Icarus Verilog
-iverilog -o tb_top.out tb/tb_top.v rtl/*.v
-vvp tb_top.out
-gtkwave results/simulation.vcd
-\`\`\`
+
+
 
 ### Synthesis & Implementation (Vivado)
 \`\`\`tcl
@@ -139,31 +110,16 @@ program_hw_devices
 | Power Consumption | Minimal |
 | Simulation Time | 60 seconds |
 | Operating Modes | Run / Set / Adjust |
-| Verified On | Vivado / Basys3 FPGA Board |
+| Verified On | Vivado / Artrix-7 FPGA Board |
 
 ---
 
-## 🧾 License
-This project is released under the **MIT License**.  
-You are free to use, modify, and distribute it with proper attribution.
+
+
+
 
 ---
 
-## 👨‍💻 Authors
-**Project Team:**  
-- [Your Name / Team Name]  
-- [Institution / Course / Batch]  
-- [GitHub Profile Link]
 
----
 
-## 🌟 Acknowledgements
-Special thanks to:
-- *Xilinx Vivado Tools*
-- *Faculty / Mentors who guided the project*
-- *Open-source FPGA and HDL communities*
-EOF
 
-git add README.md
-git commit -m "Added complete project README with architecture, schematic, and results"
-git push
