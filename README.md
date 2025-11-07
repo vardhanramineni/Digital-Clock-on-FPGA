@@ -21,7 +21,7 @@ It has been **simulated, synthesized, and tested on FPGA hardware**.
 - **Debouncing logic** for stable user input
 - **BCD conversion** for seven-segment display
 - **Fully synthesizable Verilog HDL**
-- Verified on simulation tools (ModelSim / Vivado) and implemented on FPGA (e.g., Basys3 / Nexys A7)
+- Verified on simulation tools (Xlinx Vivado) and implemented on FPGA (Artrix 7)
 
 ---
 
