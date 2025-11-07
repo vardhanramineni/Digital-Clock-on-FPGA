@@ -1,7 +1,7 @@
 # Digital-Clock-on-FPGA
 
 
-cat > README.md <<'EOF'
+
 # 🕒 Digital Clock on FPGA (Datapath + Control Path)
 
 ![Architecture](assets/architecture.png)
