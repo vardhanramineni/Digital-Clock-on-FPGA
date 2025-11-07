@@ -2,7 +2,7 @@
 
 
 
-# 🕒 Digital Clock on FPGA (Datapath + Control Path)
+# 🕒 Digital Clock on FPGA (Datapath + Control Path) 
 
 
 
