@@ -41,7 +41,7 @@ The **Control Path** is an FSM that:
 - Manages button debouncing and control pulses  
 
 **Block Diagram:**  
-![Architecture](assets/architecture.png)
+![Architecture](Image/Architecture.png)
 
 **Schematic:**  
 ![Schematic](Image/schematic.PNG)
