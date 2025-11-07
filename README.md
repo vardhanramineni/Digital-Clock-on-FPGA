@@ -68,7 +68,7 @@ The **Control Path** is an FSM that:
 - Clock Source: *100 MHz onboard oscillator (divided internally)*
 
 **Real Hardware Output:**  
-![FPGA Result](assets/fpga_photo.jpg)
+![FPGA Result](Image/fpga.jpg)
 
 The bitstream was successfully generated and downloaded to FPGA.  
 The 7-segment display updates each second and supports *resetting* via buttons.
