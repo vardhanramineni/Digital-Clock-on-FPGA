@@ -82,7 +82,7 @@ The 7-segment display updates each second and supports *resetting* via buttons.
 
 
 ### Synthesis & Implementation (Vivado)
-\`\`\`tcl
+
 - read_verilog rtl/*.v
 - read_xdc constraints/board_example.xdc
 - synth_design -top top -part xc7a35ticsg324-1L
@@ -90,15 +90,15 @@ The 7-segment display updates each second and supports *resetting* via buttons.
 - place_design
 - route_design
 - write_bitstream -force results/digital_clock.bit
-\`\`\`
+
 
 ### Program FPGA
-\`\`\`bash
+
 - open_hw
 - connect_hw_server
 - open_hw_target
 - program_hw_devices
-\`\`\`
+
 
 ---
 
