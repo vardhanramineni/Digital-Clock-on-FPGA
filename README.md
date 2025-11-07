@@ -56,7 +56,7 @@ The **Control Path** is an FSM that:
 - Output: Time updates in HH:MM:SS format
 
 **Sample Waveform:**  
-![Waveform](assets/simulation_waveform.png)
+![Waveform](Image/waveform.png)
 
 ---
 
