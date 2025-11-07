@@ -44,7 +44,7 @@ The **Control Path** is an FSM that:
 ![Architecture](assets/architecture.png)
 
 **Schematic:**  
-![Schematic](assets/schematic.png)
+![Schematic](assets/Image/schematic.png)
 
 ---
 
