@@ -43,6 +43,8 @@ The **Control Path** is an FSM that:
 **Block Diagram:**  
 ![Architecture](Image/Architecture.png)
 
+**DataPath:**
+![Datapath](Image/Architecture.png)
 **Schematic:**  
 ![Schematic](Image/schematic.PNG)
 
