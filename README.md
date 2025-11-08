@@ -65,7 +65,7 @@ The **Control Path** is an FSM that:
 ## 💡 FPGA Implementation
 
 - Toolchain: *Xilinx Vivado*  
-- Device: Artrix-7 
+- Device: Artix-7 
 - Display: *six 7-segment LEDs*  
 - Clock Source: *100 MHz onboard oscillator (divided internally)*
 
@@ -112,7 +112,7 @@ The 7-segment display updates each second and supports *resetting* via buttons.
 | Power Consumption | Minimal |
 | Simulation Time | 60 seconds |
 | Operating Modes | Run / Set / Adjust |
-| Verified On | Vivado / Artrix-7 FPGA Board |
+| Verified On | Vivado / Artix-7 FPGA Board |
 
 ---
 
